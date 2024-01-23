@@ -36,7 +36,7 @@ async def _whisper(_, inline_query):
         except:
             mm = [
                 InlineQueryResultArticle(
-                    title="💁 Whisper 💒",
+                    title="💒 Whisper 📬",
                     description="Invalid username or ID!",
                     input_message_content=InputTextMessageContent("Invalid username or ID!"),
                     thumb_url="https://graph.org/file/8a4a62d3a2d956d43d117.jpg",
@@ -45,21 +45,21 @@ async def _whisper(_, inline_query):
             ]
         
         try:
-            whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("💁 Whisper For U Darling 💒", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}")]])
-            one_time_whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("🔩 One-Time Whisper 😮‍💨", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}_one")]])
+            whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("💒 Whisper 📬", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}")]])
+            one_time_whisper_btn = InlineKeyboardMarkup([[InlineKeyboardButton("🔩 One-Time Whisper 📬", callback_data=f"fdaywhisper_{inline_query.from_user.id}_{user.id}_one")]])
             mm = [
                 InlineQueryResultArticle(
-                    title="💁 Whisper 💒",
+                    title="💒 Whisper 📬",
                     description=f"Send a Whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"💒 You are sending a whisper to {user.first_name}.\n\nType your message/sentence."),
                     thumb_url="https://graph.org/file/8a4a62d3a2d956d43d117.jpg",
                     reply_markup=whisper_btn
                 ),
                 InlineQueryResultArticle(
-                    title="🔩 One-Time Whisper 😮‍💨",
+                    title="🔩 One-Time Whisper 📬",
                     description=f"Send a one-time whisper to {user.first_name}!",
                     input_message_content=InputTextMessageContent(f"🔩 You are sending a one-time whisper to {user.first_name}.\n\nType your message/sentence."),
-                    thumb_url="https://graph.org/file/8a4a62d3a2d956d43d117.jpg",
+                    thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
                     reply_markup=one_time_whisper_btn
                 )
             ]
@@ -111,8 +111,8 @@ async def in_help():
         InlineQueryResultArticle(
             title="💒 Whisper",
             description=f"@MissSardarniBot [USERNAME | ID] [TEXT]",
-            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@MissSardarniBot (Target Username or ID) (Your Message).\n\n**Example:**\n@MissSardarniBot @username I Wanna Phuck You"),
-            thumb_url="https://te.legra.ph/file/3eec679156a393c6a1053.jpg",
+            input_message_content=InputTextMessageContent(f"**📍Usage:**\n\n@MissSardarniBot (Target Username or ID) (Your Message).\n\n**Example:**\n@MissSardarniBot @username I Wanna Msg You"),
+            thumb_url="https://graph.org/file/8a4a62d3a2d956d43d117.jpg",
             reply_markup=switch_btn
         )
     ]
