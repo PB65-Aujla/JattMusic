@@ -68,9 +68,9 @@ def welcomepic(pic, user, chatname, id, uname):
 # FUCK you bhosadiwale 
 
 
-@app.on_message(filters.command("wel") & ~filters.private)
+@app.on_message(filters.command("welcome") & ~filters.private)
 async def auto_state(_, message):
-    usage = "**Usage:**\n⦿/wel [on|off]\n➤ᴀᴜʀ ʜᴀᴀɴ ᴋᴀɴɢᴇʀs ᴋᴀʀᴏ ᴀʙ ᴄᴏᴘʏ ʙʜᴏsᴀᴅɪᴡᴀʟᴇ\n➤sᴀʟᴏɴ ᴀᴜʀ ʜᴀᴀɴ sᴛʏʟɪsʜ ғᴏɴᴛ ɴᴏᴛ ᴀʟʟᴏᴡᴇᴅ ɪɴ ᴛʜᴇ ᴛʜᴜᴍʙɴᴀɪʟ.!\ᴀᴜʀ ʜᴀᴀɴ ᴀɢʀ ᴋʜᴜᴅ ᴋɪ ᴋᴀʀɴɪ ʜᴀɪ ᴛᴏ ɢᴀᴀɴᴅ ᴍᴀʀᴀᴏ ʙᴇᴛɪᴄʜᴏᴅ"
+    usage = "**Usage:**\n⦿/welcome [on|off]\n➤Powered By Aujla"
     if len(message.command) == 1:
         return await message.reply_text(usage)
     chat_id = message.chat.id
@@ -133,11 +133,13 @@ async def greet_group(_, member: ChatMemberUpdated):
             photo=welcomeimg,
             caption=f"""
 **Wᴇʟᴄᴏᴍᴇ Tᴏ {member.chat.title}
-➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖
 Nᴀᴍᴇ ✧ {user.mention}
 Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
-➖➖➖➖➖➖➖➖➖➖➖➖**
+➖➖➖➖➖➖➖➖➖➖➖
+Aɴʏ Hᴇʟᴘ Cᴏɴᴛᴀᴄᴛ 🛂 @ᴀᴅᴍɪɴ
+Tʜᴀɴᴋs Fᴏʀ Jɪᴏɴ 🤍**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
         )
@@ -157,9 +159,9 @@ async def bot_wel(_, message):
         if u.id == app.me.id:
             await app.send_message(LOG_CHANNEL_ID, f"""
 **NEW GROUP
-➖➖➖➖➖➖➖➖➖➖➖➖
+➖➖➖➖➖➖➖➖➖➖➖
 NAME: {message.chat.title}
 ID: {message.chat.id}
 USERNAME: @{message.chat.username}
-➖➖➖➖➖➖➖➖➖➖➖➖**
+➖➖➖➖➖➖➖➖➖➖➖**
 """)
