@@ -60,7 +60,7 @@ def stream_markup_timer(_, chat_id, played, dur):
             )
         ],
         [
-            InlineKeyboardButton(text= " ➕ ", url=f"https://t.me/{app.username}?startgroup=true"),
+            InlineKeyboardButton(text= "🗨️ AᴜJʟᴀ Cʜᴀᴛ ", url=f"https://t.me/The_ChatGroup"),
             InlineKeyboardButton(text="sᴋɪᴘ ᴛʜᴇ sᴏɴɢ—‣‣", callback_data=f"ADMIN Skip|{chat_id}")],
     ]
     return buttons
@@ -69,8 +69,8 @@ def stream_markup_timer(_, chat_id, played, dur):
 def stream_markup(_, chat_id):
     buttons = [
         [
-            InlineKeyboardButton(text= " ➕ ", url=f"https://t.me/{app.username}?startgroup=true"),
-            InlineKeyboardButton(text="sᴋɪᴘ ᴛʜᴇ sᴏɴɢ—‣‣", callback_data=f"ADMIN Skip|{chat_id}")],
+            InlineKeyboardButton(text= "🗨️ AᴜJʟᴀ Cʜᴀᴛ  ", url=f"https://t.me/The_ChatGroup"),
+            InlineKeyboardButton(text="Sᴋɪᴘ Tʜᴇ Sᴏɴɢ—‣‣", callback_data=f"ADMIN Skip|{chat_id}")],
     ]
     return buttons
 
