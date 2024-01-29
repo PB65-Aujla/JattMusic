@@ -138,8 +138,8 @@ Nᴀᴍᴇ ✧ {user.mention}
 Iᴅ ✧ {user.id}
 Usᴇʀɴᴀᴍᴇ ✧ @{user.username}
 ➖➖➖➖➖➖➖➖➖➖➖
-Aɴʏ Hᴇʟᴘ Cᴏɴᴛᴀᴄᴛ 🛂 @ᴀᴅᴍɪɴ
-Tʜᴀɴᴋs Fᴏʀ Jɪᴏɴ 🤍**
+Tʜᴀɴᴋs Fᴏʀ Jɪᴏɴ 🤍
+Aɴʏ Hᴇʟᴘ Cᴏɴᴛᴀᴄᴛ @admin 🛂**
 """,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(f"⦿ ᴀᴅᴅ ᴍᴇ ⦿", url=f"https://t.me/YumikooBot?startgroup=true")]])
         )
