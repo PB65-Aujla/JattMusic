@@ -68,7 +68,7 @@ def welcomepic(pic, user, chatname, id, uname):
 # FUCK you bhosadiwale 
 
 
-@app.on_message(filters.command("welcome") & ~filters.private)
+@app.on_message(filters.command("wel") & ~filters.private)
 async def auto_state(_, message):
     usage = "**Usage:**\n⦿/welcome [on|off]\n➤Powered By Aujla"
     if len(message.command) == 1:
